@@ -1,0 +1,4 @@
+C:\Users\ahmad\OneDrive\Desktop\appoinment system\obj\Debug\appoinmentsystem.csproj.AssemblyReference.cache
+C:\Users\ahmad\OneDrive\Desktop\appoinment system\obj\Debug\appoinmentsystem.csproj.CoreCompileInputs.cache
+C:\Users\ahmad\OneDrive\Desktop\AhmadProject\obj\Debug\appoinmentsystem.csproj.AssemblyReference.cache
+C:\Users\ahmad\OneDrive\Desktop\AhmadProject\obj\Debug\appoinmentsystem.csproj.CoreCompileInputs.cache

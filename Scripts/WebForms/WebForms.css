@@ -1,0 +1,206 @@
+/* WebForms.css - Basic styling for ASP.NET WebForms controls */
+
+/* GridView Styles */
+.gridview-row-hover {
+    background-color: #f8f9fa !important;
+    transition: background-color 0.2s ease;
+}
+
+.gridview-row-selected {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.gridview-row-selected:hover {
+    background-color: #0056b3 !important;
+}
+
+/* Sort indicators */
+.sort-asc::after {
+    content: " ▲";
+    color: #007bff;
+}
+
+.sort-desc::after {
+    content: " ▼";
+    color: #007bff;
+}
+
+/* DetailsView Styles */
+.detailsview-row-even {
+    background-color: #f8f9fa;
+}
+
+.detailsview-row-odd {
+    background-color: #ffffff;
+}
+
+.detailsview-header {
+    font-weight: bold;
+    background-color: #e9ecef;
+    padding: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.detailsview-value {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+}
+
+/* TreeView Styles */
+.tree-node {
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 2px 0;
+}
+
+.tree-node:hover {
+    background-color: #f8f9fa;
+}
+
+.tree-node.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.tree-node-hover {
+    background-color: #e9ecef;
+}
+
+.tree-children {
+    margin-left: 20px;
+    border-left: 1px solid #dee2e6;
+    padding-left: 10px;
+}
+
+.expand-button, .toggle-button {
+    cursor: pointer;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* Menu Styles */
+.menu-hover {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* WebParts Styles */
+.webpart {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.webpart-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.webpart-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.webpart-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.webpart-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.webpart-controls button:hover {
+    background-color: #e9ecef;
+}
+
+.webpart-content {
+    padding: 15px;
+}
+
+.webpart.minimized .webpart-content {
+    display: none;
+}
+
+.webpart.dragging {
+    opacity: 0.5;
+    transform: rotate(5deg);
+}
+
+.webpartzone.drag-over {
+    background-color: #f8f9fa;
+    border: 2px dashed #007bff;
+}
+
+/* Validation Styles */
+.validation-error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
+
+/* Focus Styles */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .webpart-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .webpart-controls {
+        align-self: flex-end;
+    }
+    
+    .tree-children {
+        margin-left: 10px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-down {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from { 
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

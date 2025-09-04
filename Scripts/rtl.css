@@ -1,0 +1,197 @@
+/* RTL (Right-to-Left) Support for Arabic Language */
+
+/* RTL Layout */
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl .sidebar {
+    right: 0;
+    left: auto;
+}
+
+.rtl .main-content {
+    margin-right: 250px;
+    margin-left: 0;
+}
+
+.rtl .sidebar-nav {
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+.rtl .sidebar-nav .nav-link {
+    text-align: right;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+}
+
+.rtl .sidebar-nav .nav-link i {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+/* Form Elements */
+.rtl .form-floating > label {
+    right: 0.75rem;
+    left: auto;
+}
+
+.rtl .form-control {
+    text-align: right;
+}
+
+.rtl .input-group > .form-control {
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.rtl .input-group > .input-group-text {
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+/* Buttons */
+.rtl .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.rtl .btn-group > .btn:not(:first-child) {
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+/* Dropdowns */
+.rtl .dropdown-menu {
+    text-align: right;
+}
+
+.rtl .dropdown-item {
+    text-align: right;
+}
+
+/* Tables */
+.rtl .table th,
+.rtl .table td {
+    text-align: right;
+}
+
+/* Cards */
+.rtl .card-header {
+    text-align: right;
+}
+
+.rtl .card-body {
+    text-align: right;
+}
+
+/* Navigation */
+.rtl .navbar-nav {
+    padding-right: 0;
+}
+
+.rtl .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Modal */
+.rtl .modal-header .btn-close {
+    margin: -0.5rem auto -0.5rem -0.5rem;
+}
+
+.rtl .modal-footer {
+    text-align: left;
+}
+
+/* Pagination */
+.rtl .pagination {
+    justify-content: flex-start;
+}
+
+.rtl .page-link {
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.rtl .page-item:not(:first-child) .page-link {
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+
+/* Alerts */
+.rtl .alert {
+    text-align: right;
+}
+
+/* Badges */
+.rtl .badge {
+    margin-left: 0.25rem;
+    margin-right: 0;
+}
+
+/* Icons */
+.rtl .fas,
+.rtl .far,
+.rtl .fab {
+    margin-left: 0.25rem;
+    margin-right: 0;
+}
+
+/* Lists */
+.rtl .list-group {
+    text-align: right;
+}
+
+.rtl .list-group-item {
+    text-align: right;
+}
+
+/* Progress bars */
+.rtl .progress-bar {
+    text-align: right;
+}
+
+/* Tooltips */
+.rtl .tooltip {
+    text-align: right;
+}
+
+/* Popovers */
+.rtl .popover {
+    text-align: right;
+}
+
+/* Custom components */
+.rtl .stats-card .d-flex {
+    flex-direction: row-reverse;
+}
+
+.rtl .profile-section {
+    text-align: right;
+}
+
+.rtl .info-card {
+    border-right: 4px solid #007bff;
+    border-left: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rtl .main-content {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .rtl .sidebar {
+        transform: translateX(100%);
+    }
+    
+    .rtl .sidebar.show {
+        transform: translateX(0);
+    }
+}
+
+/* Print styles */
+@media print {
+    .rtl {
+        direction: rtl;
+        text-align: right;
+    }
+}
